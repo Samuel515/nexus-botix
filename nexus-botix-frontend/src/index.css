@@ -116,3 +116,7 @@ body {
 .scroll-left:hover, .scroll-right:hover {
   animation-play-state: paused;
 }
+
+a:hover{
+  color: aqua;
+}
