@@ -1,0 +1,154 @@
+.img-div {
+  place-items: center;
+}
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.text-div h1 {
+  color: #fff;
+  text-align: center;
+
+  /* Mobile/H1 */
+  font-family: Figtree;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem; /* 138.462% */
+}
+
+.text-div h2 {
+  color: #fff;
+  text-align: center;
+
+  /* Mobile/Caption 1 */
+  font-family: Figtree;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+.text-div p {
+  color: #fff;
+  text-align: center;
+
+  /* Mobile/Subtext */
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.btn-div button {
+  display: flex;
+  height: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  background: var(--Accent-orange, #e9991c);
+
+  color: var(--Nexus-White, #fefefe);
+
+  /* Mobile/CTA */
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.9375rem; /* 93.75% */
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--Nexus-White, #fefefe);
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.9375rem;
+  height: 3rem;
+}
+
+.card-div {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 5rem;
+}
+
+.card-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.825rem;
+}
+
+.card-one img {
+  place-items: center;
+}
+
+.card-one h2 {
+  color: #fff;
+  text-align: center;
+
+  /* Mobile/Section 1 */
+  font-family: Figtree;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.875rem; /* 150% */
+}
+
+.card-one h3 {
+  color: var(--Foundation-White-Normal, #fefefe);
+  text-align: center;
+
+  /* Mobile/Subtext */
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.card-one p {
+  color: #fff;
+  text-align: center;
+
+  /* Mobile/Subtext */
+  font-family: Figtree;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
