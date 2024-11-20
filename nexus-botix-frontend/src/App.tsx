@@ -8,6 +8,11 @@ const router = createBrowserRouter([
     element: <Home />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/nexus-botix",
+    element: <Home />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
 function App() {
