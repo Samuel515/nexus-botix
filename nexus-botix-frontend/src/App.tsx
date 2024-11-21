@@ -14,6 +14,12 @@ const router = createBrowserRouter([
     path: "/about",
     element: < AboutUs/>,
     errorElement: <ErrorPage />,
+  },
+
+  {
+    path: "/nexus-botix-frontend/",
+    element: < Home/>,
+    errorElement: <ErrorPage />,
   }
   
 ]);
