@@ -18,7 +18,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="~h-12/24 flex bg-custom-black sticky top-0 right-0 w-full z-10">
+    <header className="~h-12/24 flex bg-black sticky top-0 right-0 w-full z-10">
       <div className="flex justify-between w-full">
         {/* Logo Section */}
         <div className="flex justify-start items-center ~gap-0/3">
