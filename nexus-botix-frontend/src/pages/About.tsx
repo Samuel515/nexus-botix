@@ -1,7 +1,11 @@
 import Header from "../components/Header";
 import AboutIntro from "../components/Aboutintro"; 
 import Aboutcard from "../components/aboutCards"
+import TeamDiv from "../components/TeamDiv"
 import FearturesCard from "../components/FeaturesCard";
+import ChooseUs from "../components/chooseUs";
+import CallForAction from "../components/CallForAction";
+import Footer from "../components/Footer";
 import '../style/about.css'
 
 const AboutPage = () => {
@@ -14,6 +18,12 @@ const AboutPage = () => {
               <AboutIntro/>
               <Aboutcard/>
               <FearturesCard/>
+              <TeamDiv/>
+              <ChooseUs/>
+              <CallForAction/>
+              <Footer/>
+
+
               
             </div>
           </div>
