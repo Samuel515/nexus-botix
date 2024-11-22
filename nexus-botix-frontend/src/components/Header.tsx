@@ -1,4 +1,5 @@
-import logo from "/logo.svg";
+import { Link } from "react-router-dom";
+import logo from "/logo.svg"
 import GetStarted from "./GetStarted";
 
 export default function Header() {
@@ -6,14 +7,17 @@ export default function Header() {
     {
       title: "Platform",
       links: ["Platform 1", "Platform 2", "Platform 3"],
+      destination: ["/platform1", "/platform2", "/platform3"], // Added for consistency
     },
     {
       title: "Resources",
       links: ["Resources 1", "Resources 2", "Resources 3"],
+      destination: ["/resources1", "/resources2", "/resources3"], // Added for consistency
     },
     {
       title: "Solution",
       links: ["Solution 1", "Solution 2", "Solution 3"],
+      destination: ["/sol1", "/sol2", "/sol3"],
     },
   ];
 
@@ -21,10 +25,12 @@ export default function Header() {
     <header className="~h-12/24 flex bg-black sticky top-0 right-0 w-full z-10">
       <div className="flex justify-between w-full">
         {/* Logo Section */}
-        <div className="flex justify-start items-center ~gap-0/3">
-          <img src={logo} alt="logo" className="~h-4/14 ~w-5/8" />
-          <h1 className="rtext font-bold ">NEXUS BOTIX</h1>
-        </div>
+        <Link to="/" className="flex justify-center items-center">
+          <div className="flex justify-start items-center ~gap-0/3">
+            <img src={logo} alt="logo" className="~h-4/14 ~w-5/8" />
+            <h1 className="rtext font-bold ">NEXUS BOTIX</h1>
+          </div>
+        </Link>
         {/* Navigation Section */}
         <div className="flex items-center justify-center mx-2 h-full">
           <nav className="flex ~space-x-7/20 items-center srtext h-full">
@@ -42,22 +48,22 @@ export default function Header() {
                       key={linkIndex}
                       className="px-4 py-2 hover:bg-zinc-800 w-max"
                     >
-                      <a href="#">{link}</a>
+                      <Link to={item.destination[linkIndex]}>{link}</Link>
                     </li>
                   ))}
                 </ul>
               </div>
             ))}
-            <a href="#" className="h-full flex items-center justify-center">
+            <Link to="/pricing" className="h-full flex items-center justify-center">
               Pricing
-            </a>
+            </Link>
           </nav>
         </div>
 
         {/* Authentication Section */}
         <div className="flex justify-center items-center ~gap-3/6">
           <button className="srtext">Sign In</button>
-          <GetStarted className="bg-custom-yellow font-medium"/>
+          <GetStarted className="bg-custom-yellow font-medium" />
         </div>
       </div>
     </header>

@@ -1,6 +1,7 @@
 import logo from "/logo.svg";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 import twitterLogo from "/new-twitter.svg"
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,73 +17,73 @@ export default function Footer() {
           <ul className="flex flex-col gap-1">
             <li className="text-base font-medium">Main Section</li>
             <li>
-              <a href="">Find Work</a>
+              <Link to="">Find Work</Link>
             </li>
             <li>
-              <a href="">Integrations</a>
+              <Link to="">Integrations</Link>
             </li>
             <li>
-              <a href="">How it Works</a>
+              <Link to="">How it Works</Link>
             </li>
             <li>
-              <a href="">Pricing</a>
+              <Link to="">Pricing</Link>
             </li>
             <li>
-              <a href="">Explore Jobs</a>
+              <Link to="">Explore Jobs</Link>
             </li>
           </ul>
           <ul className="flex flex-col gap-1">
             <li className="text-base font-medium">Resources</li>
             <li>
-              <a href="">Blog</a>
+              <Link to="">Blog</Link>
             </li>
             <li>
-              <a href="">Help Center</a>
+              <Link to="">Help Center</Link>
             </li>
             <li>
-              <a href="">Frequently Asked Questions (FAQs)</a>
+              <Link to="">Frequently Asked Questions (FAQs)</Link>
             </li>
             <li>
-              <a href="">Case Studies</a>
+              <Link to="">Case Studies</Link>
             </li>
             <li>
-              <a href="">Community</a>
+              <Link to="">Community</Link>
             </li>
           </ul>
           <ul className="flex flex-col gap-1">
             <li className="text-base font-medium">Legal</li>
             <li>
-              <a href="">Privacy Policy</a>
+              <Link to="">Privacy Policy</Link>
             </li>
             <li>
-              <a href="">Terms of Service</a>
+              <Link to="">Terms of Service</Link>
             </li>
             <li>
-              <a href="">Cookie policy</a>
+              <Link to="">Cookie policy</Link>
             </li>
           </ul>
           <ul className="flex flex-col gap-1">
             <li className="text-base font-medium">Company Information</li>
             <li>
-              <a href="">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="">Careers</a>
+              <Link to="">Careers</Link>
             </li>
             <li>
-              <a href="">Contact Us</a>
+              <Link to="">Contact Us</Link>
             </li>
           </ul>
           <ul className="flex flex-col gap-1">
             <li className="text-base font-medium">Support</li>
             <li>
-              <a href="">24/7 Customer Support</a>
+              <Link to="">24/7 Customer Support</Link>
             </li>
             <li>
-              <a href="">Chat Support</a>
+              <Link to="">Chat Support</Link>
             </li>
             <li>
-              <a href="">Email Support</a>
+              <Link to="">Email Support</Link>
             </li>
           </ul>
         </div>
