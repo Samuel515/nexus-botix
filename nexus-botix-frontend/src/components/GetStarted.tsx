@@ -7,7 +7,7 @@ interface GetStartedProps {
   function GetStarted({ className = "" }: GetStartedProps) {
     return (
       <button
-        className={`rounded sm:rounded-md ~p-1/2 text-[0.4rem] sm:text-xs md:text-md lg:text-lg ${className}`}
+        className={`rounded-xl lg:rounded p-4 lg:p-2 text-[0.4rem] text-lg w-full lg:w-auto ${className}`}
       >
         Get Started For Free
       </button>

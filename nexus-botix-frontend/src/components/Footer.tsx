@@ -1,21 +1,21 @@
 import logo from "/logo.svg";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
-import twitterLogo from "/new-twitter.svg"
+import twitterLogo from "/new-twitter.svg";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="mt-36 px-14">
-      <div className="mb-32">
-        <div className="flex justify-start items-center ~gap-0/3 mb-10">
-          <img src={logo} alt="logo" className="~h-4/14 ~w-5/8" />
-          <h1 className="rtext font-bold ">NEXUS BOTIX</h1>
+    <div className="~mt-20/36 ~px-2/14 mb-10">
+      <div className="~mb-10/32 w-full">
+        <div className="flex items-center justify-center lg:justify-start ~gap-1/3 mb-10 w-full">
+          <img src={logo} alt="logo" className="~h-8/14 ~w-6/8" />
+          <h1 className="text-xl font-bold">NEXUS BOTIX</h1>
         </div>
-        <div className="grid grid-cols-4 gap-x-8 gap-y-10">
-          <ul className="flex flex-col gap-1">
-            <li className="text-base font-medium">Main Section</li>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10">
+          <ul className="flex flex-col ~gap-2/1  items-center lg:items-start">
+            <li className="text-base font-bold">Main Section</li>
             <li>
               <Link to="">Find Work</Link>
             </li>
@@ -32,8 +32,8 @@ export default function Footer() {
               <Link to="">Explore Jobs</Link>
             </li>
           </ul>
-          <ul className="flex flex-col gap-1">
-            <li className="text-base font-medium">Resources</li>
+          <ul className="flex flex-col ~gap-2/1  items-center lg:items-start">
+            <li className="text-base font-bold">Resources</li>
             <li>
               <Link to="">Blog</Link>
             </li>
@@ -50,8 +50,8 @@ export default function Footer() {
               <Link to="">Community</Link>
             </li>
           </ul>
-          <ul className="flex flex-col gap-1">
-            <li className="text-base font-medium">Legal</li>
+          <ul className="flex flex-col ~gap-2/1  items-center lg:items-start">
+            <li className="text-base font-bold">Legal</li>
             <li>
               <Link to="">Privacy Policy</Link>
             </li>
@@ -62,8 +62,8 @@ export default function Footer() {
               <Link to="">Cookie policy</Link>
             </li>
           </ul>
-          <ul className="flex flex-col gap-1">
-            <li className="text-base font-medium">Company Information</li>
+          <ul className="flex flex-col ~gap-2/1  items-center lg:items-start">
+            <li className="text-base font-bold">Company Information</li>
             <li>
               <Link to="/about">About Us</Link>
             </li>
@@ -74,8 +74,8 @@ export default function Footer() {
               <Link to="">Contact Us</Link>
             </li>
           </ul>
-          <ul className="flex flex-col gap-1">
-            <li className="text-base font-medium">Support</li>
+          <ul className="flex flex-col ~gap-2/1  items-center lg:items-start">
+            <li className="text-base font-bold">Support</li>
             <li>
               <Link to="">24/7 Customer Support</Link>
             </li>
@@ -90,22 +90,27 @@ export default function Footer() {
       </div>
       <hr />
       <div className="mt-10">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center flex-col-reverse gap-7 lg:flex-row">
           <p>Nexus Botix international Ltd {currentYear}</p>
-          <div className="flex justify-center items-center gap-5">
+          <div className="flex justify-center items-center gap-5 flex-col lg:flex-row">
             <p>Follow Us</p>
-            <a href="" className="border rounded-full p-2">
-              <Linkedin />
-            </a>
-            <a href="" className="border rounded-full p-2">
-              <Facebook />
-            </a>
-            <a href="" className="border rounded-full p-2">
-              <Instagram />
-            </a>
-            <a href="" className="border rounded-full p-2 flex justify-center items-center">
-              <img src={twitterLogo} alt="twitter" className="fill-white" />
-            </a>
+            <div className="flex gap-5">
+              <a href="" className="border rounded-full p-2">
+                <Linkedin />
+              </a>
+              <a href="" className="border rounded-full p-2">
+                <Facebook />
+              </a>
+              <a href="" className="border rounded-full p-2">
+                <Instagram />
+              </a>
+              <a
+                href=""
+                className="border rounded-full p-2 flex justify-center items-center h-10 w-10"
+              >
+                <img src={twitterLogo} alt="twitter" className="fill-white" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

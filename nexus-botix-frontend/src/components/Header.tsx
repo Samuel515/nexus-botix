@@ -1,18 +1,22 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "/logo.svg"
+import logo from "/logo.svg";
 import GetStarted from "./GetStarted";
 
 export default function Header() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [expandedMenu, setExpandedMenu] = useState<number | null>(null); // Explicitly define type
+
   const menuItems = [
     {
       title: "Platform",
       links: ["Platform 1", "Platform 2", "Platform 3"],
-      destination: ["/platform1", "/platform2", "/platform3"], // Added for consistency
+      destination: ["/platform1", "/platform2", "/platform3"],
     },
     {
       title: "Resources",
       links: ["Resources 1", "Resources 2", "Resources 3"],
-      destination: ["/resources1", "/resources2", "/resources3"], // Added for consistency
+      destination: ["/resources1", "/resources2", "/resources3"],
     },
     {
       title: "Solution",
@@ -21,32 +25,45 @@ export default function Header() {
     },
   ];
 
+  const toggleMenu = (index: number) => {
+    setExpandedMenu(expandedMenu === index ? null : index);
+  };
+
   return (
-    <header className="~h-12/24 flex bg-black sticky top-0 right-0 w-full z-10">
-      <div className="flex justify-between w-full">
+    <header className="h-24 flex bg-black sticky top-0 right-0 w-full z-50">
+      <div className="flex justify-between w-full items-center px-4">
         {/* Logo Section */}
         <Link to="/" className="flex justify-center items-center">
-          <div className="flex justify-start items-center ~gap-0/3">
-            <img src={logo} alt="logo" className="~h-4/14 ~w-5/8" />
-            <h1 className="rtext font-bold ">NEXUS BOTIX</h1>
+          <div className="flex justify-start items-center gap-3">
+            <img src={logo} alt="logo" className="h-14 w-8" />
+            <h1 className="text-2xl font-bold text-white">NEXUS BOTIX</h1>
           </div>
         </Link>
-        {/* Navigation Section */}
-        <div className="flex items-center justify-center mx-2 h-full">
-          <nav className="flex ~space-x-7/20 items-center srtext h-full">
+
+        {/* Hamburger Menu for Mobile */}
+        <button
+          className="lg:hidden text-white text-3xl"
+          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        >
+          &#9776;
+        </button>
+
+        {/* Navigation Section for Large Screens */}
+        <div className="hidden lg:flex items-center justify-center mx-2 h-full">
+          <nav className="flex space-x-12 items-center text-white">
             {menuItems.map((item, index) => (
               <div
                 key={index}
                 className="relative group hover:cursor-pointer h-full"
               >
-                <button className="h-full relative custom-arrow">
+                <button className="h-[80px] custom-arrow">
                   {item.title}
                 </button>
-                <ul className="hidden group-hover:flex absolute flex-col bg-custom-black text-white rounded shadow-md p-2">
+                <ul className="hidden group-hover:flex flex-col bg-gray-900 text-white rounded shadow-md p-2 absolute">
                   {item.links.map((link, linkIndex) => (
                     <li
                       key={linkIndex}
-                      className="px-4 py-2 hover:bg-zinc-800 w-max"
+                      className="px-4 py-2 hover:bg-gray-700 w-max"
                     >
                       <Link to={item.destination[linkIndex]}>{link}</Link>
                     </li>
@@ -60,10 +77,81 @@ export default function Header() {
           </nav>
         </div>
 
-        {/* Authentication Section */}
-        <div className="flex justify-center items-center ~gap-3/6">
-          <button className="srtext">Sign In</button>
-          <GetStarted className="bg-custom-yellow font-medium" />
+        {/* Authentication Section for Large Screens */}
+        <div className="hidden lg:flex justify-center items-center gap-4">
+          <button className="text-white">Sign In</button>
+          <GetStarted className="bg-custom-yellow text-white font-medium px-4 py-2 rounded" />
+        </div>
+      </div>
+
+      {/* Sidebar for Mobile */}
+      <div
+        className={`fixed inset-0 bg-black bg-opacity-80 z-20 transition-opacity duration-300 ${
+          isSidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <div
+          className={`fixed top-0 right-0 w-64 h-full bg-custom-black text-white p-4 flex flex-col transform transition-transform duration-300 ${
+            isSidebarOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          {/* Close Button */}
+          <button
+            className="self-end text-3xl"
+            onClick={() => setIsSidebarOpen(false)}
+          >
+            &times;
+          </button>
+          {/* Sidebar Links */}
+          <nav className="mt-8 space-y-6">
+            {menuItems.map((item, index) => (
+              <div key={index}>
+                <button
+                  onClick={() => toggleMenu(index)}
+                  className="w-full text-left px-4 py-2 font-bold hover:bg-gray-700 rounded"
+                >
+                  {item.title}
+                </button>
+                <ul
+                  className={`overflow-hidden transition-all duration-300 ${
+                    expandedMenu === index
+                      ? "max-h-40 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  {item.links.map((link, linkIndex) => (
+                    <li key={linkIndex}>
+                      <Link
+                        to={item.destination[linkIndex]}
+                        className="block hover:bg-gray-700 px-4 py-2 rounded"
+                        onClick={() => setIsSidebarOpen(false)} // Close sidebar on link click
+                      >
+                        {link}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <Link
+              to="/pricing"
+              className="block hover:bg-gray-700 px-4 py-2 rounded mt-4 font-bold"
+              onClick={() => setIsSidebarOpen(false)} // Close sidebar on click
+            >
+              Pricing
+            </Link>
+          </nav>
+
+          {/* Authentication Section */}
+          <div className="mt-auto">
+            <button
+              className="text-left w-full px-4 py-2 hover:bg-gray-700 rounded mb-4 flex justify-center items-center border hover:border-0"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              Sign In
+            </button>
+            <GetStarted className="w-full bg-custom-yellow text-white font-medium px-4 py-2 rounded text-center" />
+          </div>
         </div>
       </div>
     </header>

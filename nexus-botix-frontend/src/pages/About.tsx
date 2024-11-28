@@ -22,9 +22,6 @@ const AboutPage = () => {
               <ChooseUs/>
               <CallForAction/>
               <Footer/>
-
-
-              
             </div>
           </div>
         </div>

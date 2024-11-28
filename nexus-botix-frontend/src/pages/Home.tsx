@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <div className="w-full ~px-0/36">
-        <div className="~px-4/16 h-full text-justify">
+        <div className="~px-0/16 h-full text-justify">
           <div>
             <Header/>
             <Main/>

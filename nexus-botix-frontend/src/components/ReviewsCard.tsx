@@ -29,14 +29,14 @@ const ReviewCard = ({
             <Star key={index} className="fill-black h-5" />
           ))}
       </div>
-      <p className="font-medium">{text}</p>
-      <div className="flex gap-2 items-center">
+      <p className="font-medium ~text-sm/xl">{text}</p>
+      <div className="flex ~gap-1/2 items-center">
         <img
           src={avatar}
           alt={`${name} profile`}
           className="rounded-full h-12 w-12"
         />
-        <p className="font-semibold text-xl">{name}</p>
+        <p className="font-semibold ~text-lg/xl">{name}</p>
       </div>
     </div>
     </div>
@@ -111,11 +111,11 @@ export default function ReviewsCard() {
     <div className="w-full py-16 rounded-3xl border">
       <div className="flex flex-col gap-20">
         <div className="flex justify-center items-center flex-col text-center gap-5">
-          <h3 className="text-5xl font-semibold">
+          <h3 className="~text-2xl/5xl font-semibold">
             What Our Customers Are Saying
           </h3>
-          <p className="text-xl">
-            Nexus Botix helps businesses like yours improve customer <br /> experiences and drive growth
+          <p className="~text-lg/xl">
+            Nexus Botix helps businesses like yours improve customer experiences and drive growth
           </p>
         </div>
 
@@ -142,7 +142,7 @@ export default function ReviewsCard() {
           </Marquee>
         </div>
 
-        <div className="flex justify-center items-center flex-col gap-5">
+        <div className="flex justify-center items-center flex-col gap-5 px-3">
           <p className="text-base mb-5">Join 2000+ Businesses Using Nexus Botix</p>
           <GetStarted className="bg-custom-yellow" />
         </div>

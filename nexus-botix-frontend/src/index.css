@@ -11,10 +11,6 @@ body {
   overscroll-behavior: none;
 }
 
-.rtext {
-  @apply text-[0.5rem] sm:text-sm md:text-base lg:text-xl;
-}
-
 .srtext {
   @apply text-[0.4rem] sm:text-xs md:text-sm lg:text-base;
 }
@@ -116,7 +112,3 @@ body {
 .scroll-left:hover, .scroll-right:hover {
   animation-play-state: paused;
 }
-
-/* a:hover{
-  color: aqua;
-} */
