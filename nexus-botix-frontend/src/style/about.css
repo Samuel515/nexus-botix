@@ -1,0 +1,478 @@
+.img-div {
+  place-items: center;
+}
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.text-div h1 {
+  color: #fff;
+  /* text-align: center; */
+
+  /* Mobile/H1 */
+  font-family: Figtree;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem; /* 138.462% */
+}
+
+.text-div h2 {
+  color: #fff;
+  /* text-align: center; */
+
+  /* Mobile/Caption 1 */
+  font-family: Figtree;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+.text-div p {
+  color: #fff;
+  /* text-align: center; */
+
+  /* Mobile/Subtext */
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.btn-div button {
+  display: flex;
+  height: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  background: var(--Accent-orange, #e9991c);
+
+  color: var(--Nexus-White, #fefefe);
+
+  /* Mobile/CTA */
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.9375rem; /* 93.75% */
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--Nexus-White, #fefefe);
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.9375rem;
+  height: 3rem;
+}
+
+.card-div {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 5rem;
+}
+
+.card-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.825rem;
+}
+
+.card-one img {
+  place-items: center;
+}
+
+.card-one h2 {
+  color: #fff;
+  text-align: center;
+
+  /* Mobile/Section 1 */
+  font-family: Figtree;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.875rem; /* 150% */
+}
+
+.card-one h3 {
+  color: var(--Foundation-White-Normal, #fefefe);
+  text-align: center;
+
+  /* Mobile/Subtext */
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.card-one p {
+  color: #fff;
+  text-align: center;
+
+  /* Mobile/Subtext */
+  font-family: Figtree;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.team-layer {
+  border-radius: 0.75rem;
+  background: var(--Foundation-Grey-Normal, #f9fafb);
+  padding: 1.475rem;
+}
+
+.btn-two {
+  position: relative;
+  top: 15px;
+}
+.team-layer__content h1 {
+  color: var(--Nexus-Black, #111);
+  text-align: center;
+
+  /* Mobile/Section 1 */
+  font-family: Figtree;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.875rem; /* 150% */
+}
+
+.team-layer__content p {
+  color:  #111;
+  text-align: center;
+
+  /* Mobile/Subtext */
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.team-layer-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 0.825rem;
+}
+
+.choose-layer{
+  padding-top: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  margin-bottom: 1.975rem;
+}
+
+.choose-layer h1 {
+  color: var(--Foundation-White-Light, #fff);
+  text-align: center;
+
+  /* Mobile/Section 1 */
+  font-family: Figtree;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.875rem; /* 150% */
+}
+
+
+.img-div img {
+  position: relative;               /* Keep the image above the background */
+  z-index: 1;                       /* Ensure the image stays on top */
+  width: 80%;                       /* Adjust as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Blurry background effect with stars */
+.img-div::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;                      /* Scale to create the blur around the image */
+  height: 20%;
+  background: #1AA4B7;
+filter: blur(80px);               /* Blur effect for glowing background */
+  z-index: 0;                       /* Behind the image */
+}
+
+.choose-layer p {
+  color: var(--Foundation-White-Light, #fff);
+  text-align: center;
+
+  /* Mobile/Subtext */
+  font-family: Figtree;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+
+@media screen and (min-width: 1024px){
+
+   
+  /* styles.css */
+
+/* Main container */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure space between text and image */
+  padding: 40px 20px;
+   
+  color: #ffffff; /* White text for better readability */
+  gap: 50px;
+  flex-direction: row-reverse; /* Optional: space between text and image */
+}
+
+/* Left and Right sections */
+.text-div {
+  flex: 2;                       /* Takes up 50% of the container */
+  max-width: 59%;
+  padding-right: 20px;  
+  text-align: left;
+         
+}
+
+.img-div {
+  flex: 1;                       /* Takes up 50% of the container */
+  max-width: 50%;
+  display: flex;
+ 
+}
+
+/* Image styling */
+.img-div img {
+  width: 100%;                    /* Scale image to fit nicely */
+  /* height: auto; */
+  /* object-fit: contain;           Keep image aspect ratio */
+}
+
+/* Headings and Paragraph */
+.text-div h2 {
+  font-size: .7rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.text-div h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-div p {
+  font-size: .8rem;
+  line-height: 1.6;
+  /* margin-bottom: 10px; */
+}
+
+/* Buttons */
+.btn-div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;   
+  align-items: left;                  /* Space between the two buttons */
+}
+
+.btn-div button,
+.btn-div a {
+  padding: 12px 20px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.btn-div button {
+  background-color: #fca311;     /* Button background color */
+  color: #000;                   /* Text color for the button */
+}
+
+.btn-div a {
+  border: 1px solid var(--Nexus-White, #fefefe);
+}
+
+.btn-div a img {
+  width: 12px;
+  height: 12px;
+}
+
+.move{
+  text-align: right;
+}
+
+/* secoond div */
+
+.card-div{
+  gap: 2rem;
+}
+
+.card-one{
+  flex-direction: row;
+}
+
+.test{
+  flex-direction: row-reverse;
+  gap: 8.6875rem;
+}
+
+/* .text-testone{
+position: relative;
+left: 2.25rem;
+} */
+
+.normal img{
+  width: 60%;
+}
+
+
+
+.card-one  h3 {
+  text-align: left;
+
+}
+
+.card-one p{
+  text-align: left;
+}
+
+.card-one h2{
+  text-align: left;
+}
+
+.normal{
+  gap: 8.6875rem;
+}
+
+/* third div */
+
+.team-layer-imgs{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  width: 100%;
+  /* background-color: #e9991c; */
+  padding: 1.975rem;
+}
+
+.team-layer-imgs img{
+  width: 20%;
+}
+
+.team-layer__content p {
+  width: 80%;
+  text-align: center;
+}
+
+.team-layer__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 10px;
+}
+
+.choose-layer{
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.choose-layer p{
+  width: 70%;
+  text-align: center;
+}
+
+.move{
+  position: relative;
+  /* text-align: right; */
+  right: 12.6rem;
+ top: 1.8rem;
+}
+
+/* Wrapper for the robot image to create the blur and star background */
+.img-div {
+  position: relative;               /* Relative to contain the pseudo-elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Robot Image Styling */
+.img-div img {
+  position: relative;               /* Keep the image above the background */
+  z-index: 1;                       /* Ensure the image stays on top */
+  width: 80%;                       /* Adjust as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Blurry background effect with stars */
+.img-div::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;                      /* Scale to create the blur around the image */
+  height: 200%;
+  background: #1AA4B7;
+filter: blur(200px);               /* Blur effect for glowing background */
+  z-index: 0;                       /* Behind the image */
+}
+
+
+
+
+
+
+}

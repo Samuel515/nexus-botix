@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: black;
+  color: white;
+  overscroll-behavior: none;
+}
+
+.srtext {
+  @apply text-[0.4rem] sm:text-xs md:text-sm lg:text-base;
+}
+
+/* .custom-arrow::after {
+  content: url("/vector.svg");
+  position: absolute;
+  top: 50%;
+  right: -40%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+} */
+
+.custom-arrow::after {
+  content: "";
+  position: absolute;
+  top: 52%;
+  right: -40%;
+  width: clamp(6px, 1vw, 14px);
+  height: clamp(5px, 0.5vw, 8px);
+  background-image: url("/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.group:hover .custom-arrow::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.responsive-svg {
+  width: clamp(100px, 10vw, 300px);
+  height: auto;
+  top: 0;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 5s linear infinite;
+}
+
+.mainfeature-bg{
+  background: 
+    linear-gradient(45deg, #0a606b, #0A0D19 20%, #0A0D19 65%, #0a606b),
+    url('/feature-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-blend-mode: screen;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1.25rem));
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(calc(-100% - 1.25rem));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marquee-content {
+  min-width: 100%;
+  display: flex;
+  gap: 1.25rem;
+  padding: 0.5rem 0;
+}
+
+.scroll-left {
+  animation: scroll-left 60s linear infinite;
+}
+
+.scroll-right {
+  animation: scroll-right 60s linear infinite;
+}
+
+.scroll-left:hover, .scroll-right:hover {
+  animation-play-state: paused;
+}
