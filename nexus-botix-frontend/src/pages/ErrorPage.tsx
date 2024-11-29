@@ -10,7 +10,7 @@ export default function NotFoundPage() {
           <p className="text-white text-4xl">404</p>
           <p className="text-red-500">Resource Not Found!</p>
           <Link
-            to="/"
+            to="/nexus-botix"
             className="hover:underline text-white hover:text-green-200 mt-8"
           >
             Click to go back to homepage

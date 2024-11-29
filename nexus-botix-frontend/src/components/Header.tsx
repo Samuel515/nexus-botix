@@ -144,7 +144,7 @@ export default function Header() {
 
           {/* Authentication Section */}
           <div className="mt-auto">
-            <Link to="/nexus-botix-frontend/signin"
+            <Link to="/nexus-botix/signin"
               className="text-left w-full px-4 py-2 hover:bg-gray-700 rounded mb-4 flex justify-center items-center border hover:border-0"
               onClick={() => setIsSidebarOpen(false)}
             >

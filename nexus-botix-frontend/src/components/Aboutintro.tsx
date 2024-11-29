@@ -30,9 +30,9 @@ const AboutIntro = () => {
         <div />
 
         <div className="btn-div">
-          <Link to="/nexus-botix-frontend/about" className="btn-div-link">Get Started For Free</Link>
+          <Link to="/nexus-botix/about" className="btn-div-link">Get Started For Free</Link>
 
-          <a href="/nexus-botix-frontend/pricing" className="btn-contact">
+          <a href="/nexus-botix/pricing" className="btn-contact">
             Contact Sale
             <img src={arrowUp} alt="arrow" />
           </a>

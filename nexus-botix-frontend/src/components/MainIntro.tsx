@@ -17,7 +17,7 @@ export default function MainIntro() {
       <div className="flex justify-center items-center gap-5 lg:gap-10 flex-col lg:flex-row w-full px-1">
         <GetStarted className="bg-custom-yellow" />
         <Link
-          to="/nexus-botix-frontend/pricing"
+          to="/nexus-botix/pricing"
           className="flex justify-center items-center gap-2 border border-white  rounded-xl lg:rounded p-4 lg:p-2 font-medium text-[0.4rem] w-full lg:w-auto text-lg"
         >
           Contact Sale

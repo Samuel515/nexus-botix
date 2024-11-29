@@ -24,7 +24,7 @@ export default function AuthPageHeader() {
     <header className="h-24 flex bg-black sticky top-0 right-0 w-full z-50">
       <div className="px-4 flex justify-center items-center w-full">
         <div className="flex justify-between w-full items-center">
-          <Link to="/" className="flex justify-center items-center">
+          <Link to="/nexus-botix" className="flex justify-center items-center">
             <div className="flex items-center gap-3">
               <img src={logo} alt="logo" className="~h-8/14 ~w-5/8" />
               <h1 className="~text-lg/2xl font-bold text-white">NEXUS BOTIX</h1>
@@ -53,7 +53,7 @@ export default function AuthPageHeader() {
                 </div>
               ))}
               <Link
-                to="/nexus-botix-frontend/pricing"
+                to="/nexus-botix/pricing"
                 className="h-full flex items-center justify-center"
               >
                 Pricing

@@ -12,36 +12,28 @@ const router = createBrowserRouter([
     element: <Home />,
     errorElement: <ErrorPage />,
   },
-
-  {
-    path: "/nexus-botix-frontend/about",
-    element: < AboutUs/>,
-    errorElement: <ErrorPage />,
-  },
-
-  {
-    path: "/nexus-botix-frontend",
-    element: < Home/>,
-    errorElement: <ErrorPage />,
-  },
-
   {
     path: "/nexus-botix",
     element: < Home/>,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/nexus-botix-frontend/signup",
+    path: "/nexus-botix/about",
+    element: < AboutUs/>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/nexus-botix/signup",
     element: < SignUpForm/>,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/nexus-botix-frontend/signin",
+    path: "/nexus-botix/signin",
     element: < SignIn/>,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/nexus-botix-frontend/pricing",
+    path: "/nexus-botix/pricing",
     element: < Pricing/>,
     errorElement: <ErrorPage />,
   }

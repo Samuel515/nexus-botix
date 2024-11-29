@@ -83,7 +83,7 @@ const SignUpForm = () => {
         <div className="text-center my-6">
           <p>
             Already have an account?{" "}
-            <Link to="/nexus-botix-frontend/signin" className="text-yellow-500 hover:underline">
+            <Link to="/nexus-botix/signin" className="text-yellow-500 hover:underline">
               Log In
             </Link>
           </p>

@@ -43,7 +43,7 @@ export default function Sections() {
           </div>
         </div>
         <div className="flex justify-center items-center w-full">
-          <Link to="/" className="rounded-xl px-2 py-3 text-lg bg-custom-yellow text-white flex justify-center items-center w-full lg:w-auto">
+          <Link to="/nexus-botix" className="rounded-xl px-2 py-3 text-lg bg-custom-yellow text-white flex justify-center items-center w-full lg:w-auto">
             Explore Industry Solutions
           </Link>
         </div>
