@@ -11,7 +11,7 @@ export default function CallForAction() {
         Botix{" "}
       </h2>
       <div className="flex justify-center items-center gap-10 flex-col lg:flex-row w-3/4 lg:w-auto z-10">
-        <GetStarted className="bg-custom-yellow text-white" />
+        <GetStarted className="bg-custom-yellow text-white min-h-14 min-w-max" />
         <a
           href=""
           className="flex justify-center items-center gap-2 border border-black rounded-md py-3 px-3 font-medium text-lg w-full"

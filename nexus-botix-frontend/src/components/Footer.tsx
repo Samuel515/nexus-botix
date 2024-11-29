@@ -1,7 +1,7 @@
 import logo from "/logo.svg";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
-import twitterLogo from "/new-twitter.svg";
 import { Link } from "react-router-dom";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -26,7 +26,7 @@ export default function Footer() {
               <Link to="">How it Works</Link>
             </li>
             <li>
-              <Link to="">Pricing</Link>
+              <Link to="/pricing">Pricing</Link>
             </li>
             <li>
               <Link to="">Explore Jobs</Link>
@@ -65,7 +65,7 @@ export default function Footer() {
           <ul className="flex flex-col ~gap-2/1  items-center lg:items-start">
             <li className="text-base font-bold">Company Information</li>
             <li>
-              <Link to="/about">About Us</Link>
+              <Link to="/nexus-botix-frontend/about">About Us</Link>
             </li>
             <li>
               <Link to="">Careers</Link>
@@ -95,21 +95,21 @@ export default function Footer() {
           <div className="flex justify-center items-center gap-5 flex-col lg:flex-row">
             <p>Follow Us</p>
             <div className="flex gap-5">
-              <a href="" className="border rounded-full p-2">
+              <Link to="" className="border rounded-full p-2">
                 <Linkedin />
-              </a>
-              <a href="" className="border rounded-full p-2">
+              </Link>
+              <Link to="" className="border rounded-full p-2">
                 <Facebook />
-              </a>
-              <a href="" className="border rounded-full p-2">
+              </Link>
+              <Link to="" className="border rounded-full p-2">
                 <Instagram />
-              </a>
-              <a
-                href=""
+              </Link>
+              <Link
+                to=""
                 className="border rounded-full p-2 flex justify-center items-center h-10 w-10"
               >
-                <img src={twitterLogo} alt="twitter" className="fill-white" />
-              </a>
+                <FaXTwitter/>
+              </Link>
             </div>
           </div>
         </div>

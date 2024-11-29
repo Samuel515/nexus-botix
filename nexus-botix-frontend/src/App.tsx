@@ -4,6 +4,7 @@ import ErrorPage from './pages/ErrorPage'
 import AboutUs from './pages/About'
 import SignUpForm from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
+import Pricing from "./pages/Pricing";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/nexus-botix-frontend/about",
+    path: "/about",
     element: < AboutUs/>,
     errorElement: <ErrorPage />,
   },
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
   {
     path: "/nexus-botix-frontend/signin",
     element: < SignIn/>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/nexus-botix-frontend/pricing",
+    element: < Pricing/>,
     errorElement: <ErrorPage />,
   }
   
