@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Sections() {
   return (
     <div className="w-full ~px-5/24 py-20 rounded-3xl bg-whitebg text-black mb-16">
@@ -41,9 +43,9 @@ export default function Sections() {
           </div>
         </div>
         <div className="flex justify-center items-center w-full">
-          <button className="rounded-xl px-2 py-3 text-lg bg-custom-yellow text-white flex justify-center items-center w-full lg:w-auto">
+          <Link to="/" className="rounded-xl px-2 py-3 text-lg bg-custom-yellow text-white flex justify-center items-center w-full lg:w-auto">
             Explore Industry Solutions
-          </button>
+          </Link>
         </div>
       </div>
     </div>

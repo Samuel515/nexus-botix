@@ -1,6 +1,7 @@
 import GetStarted from "./GetStarted";
 import arrowUp from "/arrow-up-right.svg";
 import chatImage from "/chat-img.png";
+import { Link } from "react-router-dom";
 
 export default function MainIntro() {
   return (
@@ -15,13 +16,13 @@ export default function MainIntro() {
       </p>
       <div className="flex justify-center items-center gap-5 lg:gap-10 flex-col lg:flex-row w-full px-1">
         <GetStarted className="bg-custom-yellow" />
-        <a
-          href=""
+        <Link
+          to="/nexus-botix-frontend/pricing"
           className="flex justify-center items-center gap-2 border border-white  rounded-xl lg:rounded p-4 lg:p-2 font-medium text-[0.4rem] w-full lg:w-auto text-lg"
         >
           Contact Sale
           <img src={arrowUp} alt="arrow" className="h-7 w-7" />
-        </a>
+        </Link>
       </div>
       <div className="relative mt-8 mb-14 px-5">
         <img src={chatImage} alt="image" />

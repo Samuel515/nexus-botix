@@ -134,7 +134,7 @@ export default function Header() {
               </div>
             ))}
             <Link
-              to="/pricing"
+              to="/nexus-botix-frontend/pricing"
               className="block hover:bg-gray-700 px-4 py-2 rounded mt-4 font-bold"
               onClick={() => setIsSidebarOpen(false)} // Close sidebar on click
             >

@@ -1,5 +1,6 @@
 import Robotimg from "/rebot.svg";
 import arrowUp from "/arrow-up-right.svg";
+import { Link } from "react-router-dom";
 
 const AboutIntro = () => {
   return (
@@ -29,9 +30,9 @@ const AboutIntro = () => {
         <div />
 
         <div className="btn-div">
-          <button>Get Started For Free</button>
+          <Link to="/nexus-botix-frontend/about" className="btn-div-link">Get Started For Free</Link>
 
-          <a href="" className="btn-contact">
+          <a href="/nexus-botix-frontend/pricing" className="btn-contact">
             Contact Sale
             <img src={arrowUp} alt="arrow" />
           </a>

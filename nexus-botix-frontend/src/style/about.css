@@ -54,7 +54,7 @@
   gap: 0.85rem;
 }
 
-.btn-div button {
+.btn-div-link {
   display: flex;
   height: 3rem;
   padding-left: 4rem;
@@ -66,7 +66,7 @@
   border-radius: 0.5rem;
   background: var(--Accent-orange, #e9991c);
 
-  color: var(--Nexus-White, #fefefe);
+  color: var( #fefefe);
 
   /* Mobile/CTA */
   font-family: Figtree;
@@ -318,7 +318,6 @@ filter: blur(80px);               /* Blur effect for glowing background */
   align-items: left;                  /* Space between the two buttons */
 }
 
-.btn-div button,
 .btn-div a {
   padding: 12px 20px;
   border: none;
@@ -330,12 +329,12 @@ filter: blur(80px);               /* Blur effect for glowing background */
   border-radius: 5px;
 }
 
-.btn-div button {
+.btn-div-link {
   background-color: #fca311;     /* Button background color */
-  color: #000;                   /* Text color for the button */
+  color: #000;               /* Text color for the button */
 }
 
-.btn-div a {
+.btn-div .btn-contact {
   border: 1px solid var(--Nexus-White, #fefefe);
 }
 

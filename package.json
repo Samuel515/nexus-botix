@@ -1,0 +1,16 @@
+{
+  "name": "nexus_botix",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000n\u0000e\u0000x\u0000u\u0000s\u0000-\u0000b\u0000o\u0000t\u0000i\u0000x\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+  "build": "cd nexus-botix-frontend && npm run build",
+  "deploy": "npm run build && gh-pages -d nexus-botix-frontend/dist"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}
