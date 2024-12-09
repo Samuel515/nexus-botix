@@ -6,20 +6,17 @@ const AboutIntro = () => {
   return (
     <div className="intro">
       <div className="img-div">
-        <div className="star star1"></div>
-        <div className="star star2"></div>
-        <div className="star star3"></div>
-        <div className="star star4"></div>
-        <div className="star star5"></div>
-        <div className="star star6"></div>
-        <div className="star star7"></div>
-        <img src={Robotimg} alt="" />
+        <img src={Robotimg} alt="robot image" />
       </div>
 
       <div className="text-div">
-        <h2 className="move">ABOUT NEXUS BOTIX</h2>
-        <h1>Transforming Engagement with Intelligent AI Solutions</h1>
-        <p>
+        <h2 className="text-lg font-normal lg:font-semibold w-full flex justify-center items-center lg:items-start lg:justify-start">
+          ABOUT NEXUS BOTIX
+        </h2>
+        <h1 className="cust-lh">
+          Transforming Engagement with Intelligent AI Solutions
+        </h1>
+        <p className="text-lg text-center lg:text-left">
           At Nexus Botix, we’re driven by a commitment to empower businesses
           with advanced, accessible AI technology. Our customizable chatbots and
           virtual agents connect brands with customers in meaningful ways,
@@ -30,12 +27,14 @@ const AboutIntro = () => {
         <div />
 
         <div className="btn-div">
-          <Link to="/nexus-botix/about" className="btn-div-link">Get Started For Free</Link>
+          <Link to="/nexus-botix/about" className="btn-div-link min-w-max">
+            Get Started For Free
+          </Link>
 
-          <a href="/nexus-botix/pricing" className="btn-contact">
+          <Link to="/nexus-botix/pricing" className="btn-contact w-full">
             Contact Sale
             <img src={arrowUp} alt="arrow" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

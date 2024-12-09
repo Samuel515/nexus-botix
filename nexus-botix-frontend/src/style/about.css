@@ -5,45 +5,9 @@
 .text-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 1.25rem;
-}
-
-.text-div h1 {
-  color: #fff;
-  /* text-align: center; */
-
-  /* Mobile/H1 */
-  font-family: Figtree;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 2.25rem; /* 138.462% */
-}
-
-.text-div h2 {
-  color: #fff;
-  /* text-align: center; */
-
-  /* Mobile/Caption 1 */
-  font-family: Figtree;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25rem; /* 142.857% */
-}
-
-.text-div p {
-  color: #fff;
-  /* text-align: center; */
-
-  /* Mobile/Subtext */
-  font-family: Figtree;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem; /* 150% */
 }
 
 .btn-div {
@@ -52,6 +16,14 @@
   align-items: center;
   justify-content: center;
   gap: 0.85rem;
+  width: 100%;
+}
+
+.cust-lh {
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .btn-div-link {
@@ -65,8 +37,9 @@
   align-self: stretch;
   border-radius: 0.5rem;
   background: var(--Accent-orange, #e9991c);
+  font-size: 20px;
 
-  color: var( #fefefe);
+  color: white;
 
   /* Mobile/CTA */
   font-family: Figtree;
@@ -101,56 +74,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 25px;
-  margin-bottom: 5rem;
-}
-
-.card-one {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.825rem;
-}
-
-.card-one img {
-  place-items: center;
-}
-
-.card-one h2 {
-  color: #fff;
-  text-align: center;
-
-  /* Mobile/Section 1 */
-  font-family: Figtree;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.875rem; /* 150% */
-}
-
-.card-one h3 {
-  color: var(--Foundation-White-Normal, #fefefe);
-  text-align: center;
-
-  /* Mobile/Subtext */
-  font-family: Figtree;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem; /* 150% */
-}
-
-.card-one p {
-  color: #fff;
-  text-align: center;
-
-  /* Mobile/Subtext */
-  font-family: Figtree;
-  font-size: 0.9rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem; /* 150% */
+  gap: 40px;
+  margin-bottom: 10rem;
 }
 
 .team-layer {
@@ -176,7 +101,7 @@
 }
 
 .team-layer__content p {
-  color:  #111;
+  color: #111;
   text-align: center;
 
   /* Mobile/Subtext */
@@ -194,12 +119,12 @@
   padding-top: 0.825rem;
 }
 
-.choose-layer{
+.choose-layer {
   padding-top: 2.25rem;
   display: flex;
   flex-direction: column;
-  gap: .625rem;
-  margin-bottom: 1.975rem;
+  gap: 0.625rem;
+  margin: 5rem 0;
 }
 
 .choose-layer h1 {
@@ -214,27 +139,26 @@
   line-height: 1.875rem; /* 150% */
 }
 
-
 .img-div img {
-  position: relative;               /* Keep the image above the background */
-  z-index: 1;                       /* Ensure the image stays on top */
-  width: 80%;                       /* Adjust as needed */
+  position: relative; /* Keep the image above the background */
+  z-index: 1; /* Ensure the image stays on top */
+  width: 80%; /* Adjust as needed */
   height: auto;
   object-fit: contain;
 }
 
 /* Blurry background effect with stars */
 .img-div::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;                      /* Scale to create the blur around the image */
+  width: 80%; /* Scale to create the blur around the image */
   height: 20%;
-  background: #1AA4B7;
-filter: blur(80px);               /* Blur effect for glowing background */
-  z-index: 0;                       /* Behind the image */
+  background: #1aa4b7;
+  filter: blur(80px); /* Blur effect for glowing background */
+  z-index: 0; /* Behind the image */
 }
 
 .choose-layer p {
@@ -249,229 +173,155 @@ filter: blur(80px);               /* Blur effect for glowing background */
   line-height: 1.5rem; /* 150% */
 }
 
-
-@media screen and (min-width: 1024px){
-
-   
+@media screen and (min-width: 1024px) {
   /* styles.css */
 
-/* Main container */
-.intro {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Ensure space between text and image */
-  padding: 40px 20px;
-   
-  color: #ffffff; /* White text for better readability */
-  gap: 50px;
-  flex-direction: row-reverse; /* Optional: space between text and image */
-}
+  .cust-lh {
+    line-height: 1.4;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: left;
+  }
 
-/* Left and Right sections */
-.text-div {
-  flex: 2;                       /* Takes up 50% of the container */
-  max-width: 59%;
-  padding-right: 20px;  
-  text-align: left;
-         
-}
+  /* Main container */
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between text and image */
+    padding: 40px 20px;
 
-.img-div {
-  flex: 1;                       /* Takes up 50% of the container */
-  max-width: 50%;
-  display: flex;
- 
-}
+    color: #ffffff; /* White text for better readability */
+    gap: 50px;
+    flex-direction: row-reverse; /* Optional: space between text and image */
+    margin-top: 50px;
+  }
 
-/* Image styling */
-.img-div img {
-  width: 100%;                    /* Scale image to fit nicely */
-  /* height: auto; */
-  /* object-fit: contain;           Keep image aspect ratio */
-}
+  /* Left and Right sections */
+  .text-div {
+    flex: 2; /* Takes up 50% of the container */
+    max-width: 59%;
+    padding-right: 20px;
+    text-align: left;
+  }
 
-/* Headings and Paragraph */
-.text-div h2 {
-  font-size: .7rem;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
+  .img-div {
+    flex: 1; /* Takes up 50% of the container */
+    max-width: 50%;
+    display: flex;
+  }
 
-.text-div h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
+  /* Image styling */
+  .img-div img {
+    width: 100%; /* Scale image to fit nicely */
+    /* height: auto; */
+    /* object-fit: contain;           Keep image aspect ratio */
+  }
 
-.text-div p {
-  font-size: .8rem;
-  line-height: 1.6;
-  /* margin-bottom: 10px; */
-}
+  /* Buttons */
+  .btn-div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: left; /* Space between the two buttons */
+    width: max-content;
+  }
 
-/* Buttons */
-.btn-div {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;   
-  align-items: left;                  /* Space between the two buttons */
-}
+  .btn-div a {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+  }
 
-.btn-div a {
-  padding: 12px 20px;
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 5px;
-}
+  .btn-div-link {
+    background-color: #fca311; /* Button background color */
+    color: #000; /* Text color for the button */
+  }
 
-.btn-div-link {
-  background-color: #fca311;     /* Button background color */
-  color: #000;               /* Text color for the button */
-}
+  .btn-div .btn-contact {
+    border: 1px solid var(--Nexus-White, #fefefe);
+  }
 
-.btn-div .btn-contact {
-  border: 1px solid var(--Nexus-White, #fefefe);
-}
+  /* secoond div */
 
-.btn-div a img {
-  width: 12px;
-  height: 12px;
-}
+  .card-div {
+    gap: 2rem;
+  }
 
-.move{
-  text-align: right;
-}
+  /* third div */
 
-/* secoond div */
+  .team-layer-imgs {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    /* background-color: #e9991c; */
+    padding: 1.975rem;
+  }
 
-.card-div{
-  gap: 2rem;
-}
+  .team-layer-imgs img {
+    width: 20%;
+  }
 
-.card-one{
-  flex-direction: row;
-}
+  .team-layer__content p {
+    width: 80%;
+    text-align: center;
+  }
 
-.test{
-  flex-direction: row-reverse;
-  gap: 8.6875rem;
-}
+  .team-layer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 10px;
+  }
 
-/* .text-testone{
-position: relative;
-left: 2.25rem;
-} */
+  .choose-layer {
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+  }
 
-.normal img{
-  width: 60%;
-}
+  .choose-layer p {
+    width: 70%;
+    text-align: center;
+  }
 
+  /* Wrapper for the robot image to create the blur and star background */
+  .img-div {
+    position: relative; /* Relative to contain the pseudo-elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  /* Robot Image Styling */
+  .img-div img {
+    position: relative; /* Keep the image above the background */
+    z-index: 1; /* Ensure the image stays on top */
+    width: 80%; /* Adjust as needed */
+    height: auto;
+    object-fit: contain;
+  }
 
-.card-one  h3 {
-  text-align: left;
-
-}
-
-.card-one p{
-  text-align: left;
-}
-
-.card-one h2{
-  text-align: left;
-}
-
-.normal{
-  gap: 8.6875rem;
-}
-
-/* third div */
-
-.team-layer-imgs{
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: .6rem;
-  width: 100%;
-  /* background-color: #e9991c; */
-  padding: 1.975rem;
-}
-
-.team-layer-imgs img{
-  width: 20%;
-}
-
-.team-layer__content p {
-  width: 80%;
-  text-align: center;
-}
-
-.team-layer__content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.25rem;
-  padding: 10px;
-}
-
-.choose-layer{
-  align-items: center;
-  justify-content: center;
-  padding: 1.25rem;
-}
-
-.choose-layer p{
-  width: 70%;
-  text-align: center;
-}
-
-.move{
-  position: relative;
-  /* text-align: right; */
-  right: 12.6rem;
- top: 1.8rem;
-}
-
-/* Wrapper for the robot image to create the blur and star background */
-.img-div {
-  position: relative;               /* Relative to contain the pseudo-elements */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Robot Image Styling */
-.img-div img {
-  position: relative;               /* Keep the image above the background */
-  z-index: 1;                       /* Ensure the image stays on top */
-  width: 80%;                       /* Adjust as needed */
-  height: auto;
-  object-fit: contain;
-}
-
-/* Blurry background effect with stars */
-.img-div::before {
-  content: '';
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;                      /* Scale to create the blur around the image */
-  height: 200%;
-  background: #1AA4B7;
-filter: blur(200px);               /* Blur effect for glowing background */
-  z-index: 0;                       /* Behind the image */
-}
-
-
-
-
-
-
+  /* Blurry background effect with stars */
+  .img-div::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Scale to create the blur around the image */
+    height: 200%;
+    background: #1aa4b7;
+    filter: blur(200px); /* Blur effect for glowing background */
+    z-index: 0; /* Behind the image */
+  }
 }

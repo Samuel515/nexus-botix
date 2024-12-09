@@ -5,6 +5,7 @@ import AboutUs from './pages/About'
 import SignUpForm from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import Pricing from "./pages/Pricing";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
   {
     path: "/nexus-botix/pricing",
     element: < Pricing/>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/nexus-botix/privacy-policy",
+    element: < PrivacyPolicy/>,
     errorElement: <ErrorPage />,
   }
   

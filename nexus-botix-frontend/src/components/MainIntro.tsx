@@ -21,7 +21,7 @@ export default function MainIntro() {
           className="flex justify-center items-center gap-2 border border-white  rounded-xl lg:rounded p-4 lg:p-2 font-medium text-[0.4rem] w-full lg:w-auto text-lg"
         >
           Contact Sale
-          <img src={arrowUp} alt="arrow" className="h-7 w-7" />
+          <img src={arrowUp} alt="arrow" />
         </Link>
       </div>
       <div className="relative mt-8 mb-14 px-5">

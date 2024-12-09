@@ -8,7 +8,7 @@
 body {
   background-color: black;
   color: white;
-  overscroll-behavior: none;
+  overscroll-behavior-y: none;
 }
 
 .srtext {
@@ -60,6 +60,10 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.cust-abt-cards{
+  @apply flex flex-col gap-5 lg:flex-row-reverse lg:justify-between lg:items-center lg:h-[400px];
 }
 
 .animate-gradient {

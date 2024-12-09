@@ -71,7 +71,7 @@ export default function Header() {
                 </ul>
               </div>
             ))}
-            <Link to="/nexus-botix-frontend/pricing" className="h-full flex items-center justify-center">
+            <Link to="/nexus-botix/pricing" className="h-full flex items-center justify-center">
               Pricing
             </Link>
           </nav>
@@ -79,7 +79,7 @@ export default function Header() {
 
         {/* Authentication Section for Large Screens */}
         <div className="hidden lg:flex justify-center items-center gap-4">
-          <Link to="/nexus-botix-frontend/signin" className="text-white">Sign In</Link>
+          <Link to="/nexus-botix/signin" className="text-white">Sign In</Link>
           <GetStarted className="bg-custom-yellow text-white font-medium px-4 py-2 rounded"/>
         </div>
       </div>
@@ -134,7 +134,7 @@ export default function Header() {
               </div>
             ))}
             <Link
-              to="/nexus-botix-frontend/pricing"
+              to="/nexus-botix/pricing"
               className="block hover:bg-gray-700 px-4 py-2 rounded mt-4 font-bold"
               onClick={() => setIsSidebarOpen(false)} // Close sidebar on click
             >
@@ -150,7 +150,7 @@ export default function Header() {
             >
               Sign In
             </Link>
-            <GetStarted className="w-full bg-custom-yellow text-white font-medium px-4 py-2 rounded text-center" />
+            <GetStarted className="w-full bg-custom-yellow text-white font-medium px-4 py-2 rounded-[4px] text-center" />
           </div>
         </div>
       </div>
