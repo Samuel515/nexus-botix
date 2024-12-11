@@ -116,3 +116,8 @@ body {
 .scroll-left:hover, .scroll-right:hover {
   animation-play-state: paused;
 }
+
+a:hover{
+  @apply text-yellow-500;
+  text-decoration: underline;
+}

@@ -28,7 +28,7 @@ const footerSections = [
     title: "Legal",
     links: [
       { text: "Privacy Policy", to: "/nexus-botix/privacy-policy" },
-      { text: "Terms of Service", to: "/nexus-botix/terms-of-use" },
+      { text: "Terms of Service", to: "/nexus-botix/terms-of-service" },
       { text: "Cookie policy", to: "" },
     ],
   },
