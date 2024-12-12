@@ -1,6 +1,6 @@
-import AboutImg1 from "/about first pic.svg";
-import ABoutImg2 from "/about 2.svg";
-import ABoutImg3 from "/about 3.svg";
+import AboutImg1 from "/about-1.svg";
+import AboutImg2 from "/about-2.svg";
+import AboutImg3 from "/about-3.svg";
 
 export default function AboutCards() {
   return (
@@ -19,7 +19,7 @@ export default function AboutCards() {
         </div>
       </div>
       <div className="flex flex-col gap-5 w-full lg:flex-row lg:justify-between lg:items-center lg:h-[400px]">
-        <img src={ABoutImg2} alt="chart image" className="h-max lg:h-full" />
+        <img src={AboutImg2} alt="chart image" className="h-max lg:h-full" />
         <div className="text-center flex flex-col gap-5 lg:max-w-[50%] lg:text-left lg:max-h-[50%] lg:gap-5">
           <h2 className="~text-2xl/3xl font-semibold">Our Values</h2>
 
@@ -54,7 +54,7 @@ export default function AboutCards() {
         </div>
       </div>
       <div className="text-center cust-abt-cards">
-        <img src={ABoutImg3} alt="opened book" className="h-max lg:h-full" />
+        <img src={AboutImg3} alt="opened book" className="h-max lg:h-full" />
         <div className="flex flex-col gap-5 lg:max-w-[50%] lg:text-left lg:max-h-[50%]">
           <h2 className="~text-2xl/3xl font-semibold">Our Story</h2>
           <p className="text-base leading-[24px] lg:text-xl">
