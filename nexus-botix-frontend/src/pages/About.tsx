@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import AboutIntro from "../components/Aboutintro";
-import AboutCard from "../components/AboutCards.tsx";
+import AboutCards from "../components/AboutCards";
 import TeamDiv from "../components/TeamDiv";
 import FearturesCard from "../components/FeaturesCard";
 import ChooseUs from "../components/chooseUs";
@@ -16,7 +16,7 @@ const AboutPage = () => {
           <Header />
           <div className="overflow-hidden ~px-4/0">
             <AboutIntro />
-            <AboutCard />
+            <AboutCards/>
             <FearturesCard />
             <TeamDiv />
             <ChooseUs />
