@@ -2,7 +2,7 @@ import AboutImg1 from "/about first pic.svg";
 import ABoutImg2 from "/about 2.svg";
 import ABoutImg3 from "/about 3.svg";
 
-const Aboutcard = () => {
+const AboutCard = () => {
   return (
     <div className="card-div mt-10  ~mx-0/5 flex flex-col gap-20">
       <div className="cust-abt-cards">
@@ -70,4 +70,4 @@ const Aboutcard = () => {
   );
 };
 
-export default Aboutcard;
+export default AboutCard;
