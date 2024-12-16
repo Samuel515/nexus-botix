@@ -30,6 +30,8 @@ const footerSections = [
       { text: "Privacy Policy", to: "/nexus-botix/privacy-policy" },
       { text: "Terms of Service", to: "/nexus-botix/terms-of-service" },
       { text: "Cookie policy", to: "" },
+      { text: "Data Processing Agreement", to: "/nexus-botix/data-processing-agreement" },
+      { text: "GDPR Compliance Statement", to: "/nexus-botix/gdpr-statement" },
     ],
   },
   {
