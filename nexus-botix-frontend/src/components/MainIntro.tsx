@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import GetStarted from "./GetStarted";
 import arrowUp from "/arrow-up-right.svg";
 import chatImage from "/chat-img.png";
-import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
 
 export default function MainIntro() {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   return (
     <div className="flex justify-center items-center flex-col gap-9">
       <h1 className="text-center ~text-3xl/6xl font-medium">
@@ -16,17 +19,22 @@ export default function MainIntro() {
       </p>
       <div className="flex justify-center items-center gap-5 lg:gap-10 flex-col lg:flex-row w-full px-1">
         <GetStarted className="bg-custom-yellow" />
-        <Link
-          to="/nexus-botix/pricing"
-          className="flex justify-center items-center gap-2 border border-white  rounded-xl lg:rounded p-4 lg:p-2 font-medium text-[0.4rem] w-full lg:w-auto text-lg"
+        <button
+          onClick={() => setIsFormOpen(true)}
+          className="flex justify-center items-center gap-2 border border-white rounded-xl lg:rounded p-4 lg:p-2 font-medium text-lg w-full lg:w-auto hover:underline"
         >
-          Contact Sale
-          <img src={arrowUp} alt="arrow" />
-        </Link>
+          Contact Sales
+          <img src={arrowUp} alt="arrow" className="w-5 h-5" />
+        </button>
       </div>
       <div className="relative mt-8 mb-14 px-5">
         <img src={chatImage} alt="image" />
       </div>
+
+      <ContactForm 
+        isOpen={isFormOpen}
+        onClose={() => setIsFormOpen(false)}
+      />
     </div>
   );
 }

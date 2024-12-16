@@ -10,6 +10,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import DataPA from "./pages/DataPA";
 import GDPR from "./pages/GDPR";
+import Faq from "./pages/Faq"
 
 function ScrollToTopWrapper() {
   useScrollToTop();
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
       {
         path: "/nexus-botix/gdpr-statement",
         element: <GDPR />,
+      },
+      {
+        path: "/nexus-botix/faq",
+        element: <Faq/>
       }
     ],
   },

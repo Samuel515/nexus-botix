@@ -19,7 +19,7 @@ const footerSections = [
     links: [
       { text: "Blog", to: "" },
       { text: "Help Center", to: "" },
-      { text: "Frequently Asked Questions (FAQs)", to: "" },
+      { text: "Frequently Asked Questions (FAQs)", to: "/nexus-botix/faq" },
       { text: "Case Studies", to: "" },
       { text: "Community", to: "" },
     ],
@@ -45,7 +45,7 @@ const footerSections = [
     links: [
       { text: "24/7 Customer Support", to: "" },
       { text: "Chat Support", to: "" },
-      { text: "Email Support", to: "" },
+      { text: "Email Support", to: "mailto:hello@nexusbotix.com"},
     ],
   },
 ];

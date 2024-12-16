@@ -394,7 +394,7 @@ export default function PrivacyPolicy() {
             If you have any questions, concerns, or requests regarding this
             Privacy Policy, please contact us:
           </p>
-          <p>Email: <a href="mailto:hello@nexusbotix.com">hello@nexusbotix.com</a></p>
+          <p>Email: <a href="mailto:hello@nexusbotix.com" className="text-yellow-500">hello@nexusbotix.com</a></p>
           <p className="border-t border-dashed border-gray-700 py-10">
             By using our Services, you acknowledge that you have read and
             understood this Privacy Policy. Thank you for trusting Nexus Botix

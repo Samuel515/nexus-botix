@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import { Plus, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Plus, X } from "lucide-react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 // FAQ Data
 const faqData = [
@@ -11,27 +13,28 @@ const faqData = [
   },
   {
     id: 2,
-    question: 'Can I upgrade my plan later?',
+    question: "Can I upgrade my plan later?",
     answer:
       "Yes, you can upgrade your plan at any time. Your new plan benefits will be available immediately, and we'll prorate any remaining balance from your current plan.",
   },
   {
     id: 3,
-    question: "What's the difference between the Professional and Business Plans?",
+    question:
+      "What's the difference between the Professional and Business Plans?",
     answer:
-      'The Professional Plan is designed for growing teams with advanced customization needs, while the Business Plan offers enterprise-grade features, dedicated support, and higher usage limits. Business Plans also include priority support and custom integrations.',
+      "The Professional Plan is designed for growing teams with advanced customization needs, while the Business Plan offers enterprise-grade features, dedicated support, and higher usage limits. Business Plans also include priority support and custom integrations.",
   },
   {
     id: 4,
-    question: 'Does the Enterprise Plan offer custom solutions?',
+    question: "Does the Enterprise Plan offer custom solutions?",
     answer:
-      'Yes, the Enterprise Plan includes custom solution development, dedicated account management, and bespoke integrations tailored to your specific business needs.',
+      "Yes, the Enterprise Plan includes custom solution development, dedicated account management, and bespoke integrations tailored to your specific business needs.",
   },
   {
     id: 5,
-    question: 'Are there additional costs for extra agents or integrations?',
+    question: "Are there additional costs for extra agents or integrations?",
     answer:
-      'Each plan comes with a set number of agents and integrations. Additional agents and integrations can be purchased as add-ons, with pricing varying based on your current plan level.',
+      "Each plan comes with a set number of agents and integrations. Additional agents and integrations can be purchased as add-ons, with pricing varying based on your current plan level.",
   },
 ];
 
@@ -59,7 +62,7 @@ const FaqItem: React.FC<{
       </button>
       <div
         className={`grid transition-all duration-300 ease-in-out ${
-          isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >
         <div className="overflow-hidden">
@@ -79,23 +82,27 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <div className="my-28 flex items-center justify-center p-4">
-      <div className="max-w-5xl w-full mx-auto">
-        <h1 className="text-4xl font-bold text-white text-center mb-12">
-          Frequently Asked Questions
-        </h1>
-        <div className="space-y-2">
-          {faqData.map((item) => (
-            <FaqItem
-              key={item.id}
-              question={item.question}
-              answer={item.answer}
-              isOpen={openItemId === item.id}
-              onToggle={() => handleToggle(item.id)}
-            />
-          ))}
+    <div className="~px-0/56">
+      <Header />
+      <div className="py-28 flex items-center justify-center p-4 border-t border-dotted border-gray-900 h-[85vh]">
+        <div className="max-w-5xl w-full mx-auto">
+          <h1 className="text-4xl font-bold text-white text-center mb-12">
+            Frequently Asked Questions
+          </h1>
+          <div className="space-y-2">
+            {faqData.map((item) => (
+              <FaqItem
+                key={item.id}
+                question={item.question}
+                answer={item.answer}
+                isOpen={openItemId === item.id}
+                onToggle={() => handleToggle(item.id)}
+              />
+            ))}
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

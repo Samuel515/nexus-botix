@@ -33,7 +33,7 @@ export default function Header() {
     <header className="h-24 flex bg-black sticky top-0 right-0 w-full z-50">
       <div className="flex justify-between w-full items-center px-4">
         {/* Logo Section */}
-        <Link to="/" className="flex justify-center items-center">
+        <Link to="/nexus-botix" className="flex justify-center items-cente">
           <div className="flex justify-start items-center gap-3">
             <img src={logo} alt="logo" className="h-14 w-8" />
             <h1 className="text-2xl font-bold text-white">NEXUS BOTIX</h1>

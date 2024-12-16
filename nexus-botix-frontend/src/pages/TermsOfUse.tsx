@@ -515,7 +515,7 @@ export default function TermsOfService() {
           </p>
           <p>
             Email:{" "}
-            <a href="mailto:hello@nexusbotix.com" className="text-custom-yellow">hello@nexusbotix.com</a>
+            <a href="mailto:hello@nexusbotix.com" className="text-yellow-500">hello@nexusbotix.com</a>
           </p>
           <p className="border-t border-dashed border-gray-700 py-10">
             By using Nexus Botix, you acknowledge that you have read,

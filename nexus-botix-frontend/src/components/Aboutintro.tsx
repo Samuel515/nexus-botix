@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import Robotimg from "/rebot.svg";
 import arrowUp from "/arrow-up-right.svg";
 import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
 
 const AboutIntro = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   return (
     <div className="intro">
       <div className="img-div">
@@ -27,16 +31,23 @@ const AboutIntro = () => {
         <div />
 
         <div className="btn-div">
-          <Link to="/nexus-botix/about" className="btn-div-link min-w-max">
+          <Link to="/nexus-botix/signup" className="btn-div-link min-w-max">
             Get Started For Free
           </Link>
 
-          <Link to="/nexus-botix/pricing" className="btn-contact w-full">
-            Contact Sale
-            <img src={arrowUp} alt="arrow" />
-          </Link>
+          <button
+          onClick={() => setIsFormOpen(true)}
+          className="flex justify-center items-center gap-2 border border-white rounded-xl lg:rounded px-3 py-2.5 font-medium text-lg w-full lg:w-auto hover:underline"
+        >
+          Contact Sales
+          <img src={arrowUp} alt="arrow" className="w-5 h-5" />
+        </button>
         </div>
       </div>
+      <ContactForm 
+        isOpen={isFormOpen}
+        onClose={() => setIsFormOpen(false)}
+      />
     </div>
   );
 };
