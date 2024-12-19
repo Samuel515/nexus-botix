@@ -26,8 +26,8 @@ export default {
         'custom-white-bg': '#F9FAFB',
       },
       backgroundImage: {
-        'main-bg': "url('/main-bg.svg')",
-        'r-main-bg': "url(/r-main-bg.svg)"
+        'main-bg': "url('/main-bg/main-bg.svg')",
+        'r-main-bg': "url(/main-bg/r-main-bg.svg)"
       },
       animation: {
         marquee: "marquee 20s linear infinite",

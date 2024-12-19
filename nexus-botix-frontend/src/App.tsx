@@ -1,16 +1,16 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import { useScrollToTop } from './hooks/useScrollToTop';
-import Home from './pages/Home'
-import ErrorPage from './pages/ErrorPage'
-import AboutUs from './pages/About'
-import SignUpForm from "./pages/SignUp";
-import SignIn from "./pages/SignIn";
-import Pricing from "./pages/Pricing";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfUse from "./pages/TermsOfUse";
-import DataPA from "./pages/DataPA";
-import GDPR from "./pages/GDPR";
-import Faq from "./pages/Faq"
+import { useScrollToTop } from "./hooks/useScrollToTop";
+import Home from "./pages/home/Home";
+import ErrorPage from "./pages/errorpage/ErrorPage";
+import AboutUs from "./pages/about/About";
+import SignUpForm from "./pages/auth/SignUp";
+import SignIn from "./pages/auth/SignIn";
+import Pricing from "./pages/pricing/Pricing";
+import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
+import TermsOfUse from "./pages/legal/TermsOfUse";
+import DataPA from "./pages/legal/DataPA";
+import GDPR from "./pages/legal/GDPR";
+import Faq from "./pages/faq/Faq";
 
 function ScrollToTopWrapper() {
   useScrollToTop();
@@ -64,17 +64,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/nexus-botix/faq",
-        element: <Faq/>
-      }
+        element: <Faq />,
+      },
     ],
   },
 ]);
 
 function App() {
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
-
