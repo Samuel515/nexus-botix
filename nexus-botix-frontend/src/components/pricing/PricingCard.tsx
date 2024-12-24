@@ -1,6 +1,7 @@
 import GetStarted from "../buttons/GetStarted";
 import { FaCheck } from "react-icons/fa6";
 
+
 export default function PricingCards() {
   // Array of pricing plan data
   const pricingPlans = [
@@ -10,52 +11,66 @@ export default function PricingCards() {
       description:
         "Ideal for small businesses and startups trying out AI chatbots.",
       features: [
-        "Up to 2 AI agents",
-        "Multi-platform integration (Web, Social)",
-        "Basic analytics",
-        "Access to core templates",
-        "Community support",
+        " 150,000 AI Tokens per month",
+        "25 Knowledge Base Sources per AI Agent.",
+        " collect name and email only.",
+        "2 AI Agent",
+        "10 Document upload",
+        "Basic Tier (email-based)"
+      ],
+    },
+    {
+      title: "Starter Plan",
+      price: "$15",
+      description:
+        "Designed for growing businesses that require a more comprehensive AI setup",
+      features: [
+        "3,000,000 AI Tokens per month.",
+        "100 Knowledge Base Sources per AI Agent.",
+        "Brand Logo and Color Customization",
+        " Collect name, email, and phone number.",
+        "10 AI Agents",
+        "25 File upload",
+        "Chat Support: Priority email support.",
+        "Integration with Social Media (WhatsApp)"
+
+
       ],
     },
     {
       title: "Professional Plan",
-      price: "$49",
+      price: "$100",
       description:
-        "Ideal for small businesses and startups trying out AI chatbots.",
+        "Tailored for medium-sized businesses with a significant focus on AI optimization.",
       features: [
-        "Up to 5 AI agents",
-        "Multi-platform integration (Web, Social, CRM)",
-        "Advanced analytics and reporting",
-        "Customizable chat flows",
-        "Priority email support",
-      ],
-    },
-    {
-      title: "Business Plan",
-      price: "$149",
-      description:
-        "Ideal for small businesses and startups trying out AI chatbots.",
-      features: [
-        "Up to 10 AI agents",
-        "Full multi-channel support (Web, Social, CRM, Apps)",
-        "Detailed insights and analytics",
+        "10,000,000 AI Tokens per month",
+        "500 Knowledge Base Sources per AI Agent.",
+        "Brand Logo and Color Customization: Full branding control.",
         "Custom branding",
-        "Dedicated account manager",
-        "Priority chat and email support",
+        "Unlimited AI Agent",
+        "Dedicated account manager.",
+        "Integration with Social Media (Meta: WhatsApp, Instagram, Facebook).",
+        "150 File upload",
+        "Advanced insights into token usage, customer engagement, and performanc",
+
       ],
     },
     {
       title: "Enterprise Plan",
-      price: "$449",
+      price: "Custom Pricing",
       description:
-        "Ideal for small businesses and startups trying out AI chatbots.",
+        "Perfect for large enterprises seeking tailored AI solutions with dedicated support.",
       features: [
-        "Unlimited AI agents",
-        "Omnichannel support (Web, Social, CRM, Apps, Voice)",
-        "Advanced customizations",
-        "White-label options",
-        "Dedicated account and success manager",
-        "24/7 priority support",
+        "Unlimited AI Tokens",
+        "Unlimited AI ",
+        "Unlimited Knowledge Base Sources per AI Agent.",
+        " Advanced branding and custom themes.",
+        "Fully integrated with CRM tools.",
+        "24/7 dedicated team with SLA guarantees.",
+        "Integration with Social Media (Meta: WhatsApp, Instagram, Facebook).",
+        "For deep integrations.",
+        "Enterprise-level reporting and advanced insights.",
+        "1-1 Training and onbo",
       ],
     },
   ];
